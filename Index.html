@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>UIComponent</title>
+    <script src="https://rawgit.com/farzher/fuzzysort/master/fuzzysort.js"></script>
+    
+  </head>
+
+  <body>
+    <div id="root">
+        <div id="numberRepos">Your repositories <span id="noRepos"></span></div>
+        <div id="search1"><input type="text" id="inp" placeholder="Find a repository..." onkeyup="fuzzy()"></div>
+        <br>
+        <div>
+            <button value="all" onclick="showAll()">All</button>
+            <button value="false" onclick="showPublic()">Public</button>
+            <button value="true" onclick="showPrivate()">Private</button>
+            <button value="false" onclick="showSources()">Sources</button>
+            <button value="true" onclick="showFork()">Fork</button>
+        </div>
+        <div id="show">
+            <ul id="show1">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
